@@ -1,0 +1,518 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f1116;
+}
+
+header .logo {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+header .logo img {
+    width: 10%;
+}
+
+main {
+    padding-bottom: 4rem;
+}
+
+.indicator {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.indicator .line {
+
+    height: 1px;
+    background: #f3722c;
+    width: 30%;
+    left: 0;
+    z-index: 10;
+    opacity: .3;
+}
+
+.indicator p img {
+    padding-right: .5rem;
+}
+
+.indicator p {
+    position: relative;
+    z-index: 20;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: .3s ease-in all;
+    opacity: .4;
+
+}
+
+.tab {
+    display: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.tab.show {
+    display: block;
+}
+
+.active {
+    opacity: 1 !important;
+}
+
+
+#areaForm {
+    padding-top: 4rem;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.card-content {
+    background: rgb(225, 229, 229);
+    width: 70%;
+    float: center;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 2px;
+}
+
+.card-content h2 {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: #313338;
+}
+
+.card-content .resumo p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #6f7074;
+}
+
+.card-content .preco {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #c9c9c9;
+    padding-bottom: .5rem;
+}
+
+
+.card-content .preco span {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.card-content .preco p {
+    font-size: 3.5rem;
+    padding-left: .5rem;
+    color: #0f1116;
+    font-weight: 600;
+}
+
+
+.card-content .cupom .inputArea {
+    overflow: hidden;
+    width: 100%;
+}
+
+.card-content .cupom {
+    border-bottom: 1px solid #c9c9c9;
+    padding-bottom: 2rem;
+}
+
+.card-content .cupom input {
+    width: 100%;
+    position: relative;
+    border: none;
+    background: #cfcfcf;
+    padding: 1rem;
+    color: #313338;
+    font-weight: 500;
+    outline: none;
+}
+
+.card-content .cupom button {
+    position: absolute;
+    margin-left: -80px;
+    margin-top: 1rem;
+    font-weight: 700;
+    color: #313338;
+    background: transparent;
+    border: none;
+}
+
+.card-content .cupom h5 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #313338;
+    padding-bottom: 1rem;
+}
+
+.card-content .valor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.card-content .valor p {
+    font-size: 1.2rem;
+}
+
+.card-content .valor .preco {
+    border: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+
+
+@media screen and (max-width: 991px) {
+
+    header .logo img {
+        width: 40%;
+    }
+
+    .indicator {
+        width: 100%;
+    }
+
+    .indicator {
+        justify-content: space-around;
+        width: 90%;
+    }
+
+    .indicator p {
+        display: flex;
+        flex-direction: column;
+        font-size: .9rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .indicator p img {
+        width: 45%;
+    }
+
+    .card-content {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .card-content .preco p {
+        font-size: 2rem;
+        padding-top: 1rem;
+    }
+
+    .card-content .cupom input {
+        font-size: .9rem;
+        font-weight: 500;
+    }
+    
+    .card-content .cupom button {
+        background: #cfcfcf !important;
+        text-align: center;
+        font-size: .9rem;
+    }
+
+}
+
+#formulario {
+    color: #fff;
+    padding-left: 0rem;
+    width: 80%;
+}
+
+#formulario input {
+    width: 100%;
+    padding: 1.1rem;
+    background: rgba(255,255,255,.05);
+    border-radius: 0px;
+    border: 0;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 400;
+    outline: 0;
+  
+    outline-width: 1px;
+}
+
+
+
+#formulario label {
+    padding-top: 2rem;
+    padding-bottom: .5rem;
+    font-weight: 600;
+}
+
+#formulario .aceitar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#formulario .aceitar input {
+    width: 15px;
+    background: #f3722c !important;
+    color: #fff;
+}
+
+#formulario .aceitar .ck1 {
+    accent-color: #f3722c;
+    color: #fff !important;
+}
+
+#formulario .aceitar p {
+    padding-top: 1rem;
+    padding-left: .5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#formulario select {
+    background: rgba(255,255,255,.05);
+    color: #fff;
+    border: 0;
+    width: 100%;
+    padding: 1rem;
+   
+}
+
+#formulario option {
+    color: #000;
+    padding: .5rem;
+    border: 0;
+}
+
+#formulario .botao button {
+    width: 100%;
+    padding: 1.2rem;
+    background: #f3722c;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#formulario .titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+
+#formulario .titulo h5 {
+    font-size: 1.1rem;
+    font-weight: 400;
+
+  
+}
+
+#formulario .titulo .line {
+    width: 25%;
+    height: 0.1rem;
+    background-color: hsla(0,0%,100%,.2);
+}
+
+#formulario .login .botao {
+    text-align: center;
+}
+
+#formulario .login .botao button {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: .8rem;
+    text-align: center;
+    transition: .5s;
+}
+
+#formulario .login .botao button:hover {
+    background-color: #fff;
+    color: #0f1116;
+}
+
+#formulario .termos {
+    padding-top: 1rem;
+}
+
+#formulario .termos p {
+    font-size: .9rem;
+    text-align: left;
+}
+
+#formulario .termos a {
+    color: #fff;
+}
+
+#formulario .planos {
+    padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 991px) {
+    #formulario {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+#perguntas-frequentes {
+    padding-top: 3rem;
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+#perguntas-frequentes h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+#perguntas-frequentes .titulo {
+    text-align: center;
+}
+
+
+#perguntas-frequentes .nav {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;  
+    border: 0;  
+}
+
+#perguntas-frequentes .nav .nav-link  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    transition: .5s;
+}
+
+#perguntas-frequentes .nav .nav-link:hover {
+   border: 0;
+   
+}
+
+
+
+#perguntas-frequentes .nav .nav-link h3 {
+    font-size: 1.3rem;
+    padding-top: .3rem;
+    font-weight: 500;
+    padding-left: .5rem;
+}
+
+#perguntas-frequentes .nav-link .icon {
+    font-size: 1.3rem;
+    transition: .3s;
+}
+
+#perguntas-frequentes .nav-link.active .icon {
+    color: #f3722c !important;
+}
+
+#perguntas-frequentes .nav-link:hover .icon {
+    color: #f3722c;
+}
+
+#perguntas-frequentes .nav-link.active {
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #f3722c;
+}
+
+#perguntas-frequetes .tab-content {
+    border: 0;
+}
+
+
+#perguntas-frequentes .accordion {
+    border: 0;
+    color: #fff;
+}
+
+#perguntas-frequentes .accordion .accordion-item .accordion-header .accordion-button {
+    background: rgba(255,255,255,.05) !important;
+    border: 0;
+    color: #fff;
+    outline: 0;
+    border-radius: 8px;
+    padding: 1.5rem !important;
+    font-size: 1.3rem;
+    font-weight: 600;
+    box-shadow: none;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#perguntas-frequentes .accordion .accordion-item {
+    background: transparent;
+    color: #fff;
+    border: 0;
+    padding-top: 1rem;
+}
+
+
+#perguntas-frequentes .accordion .accordion-item .accordion-body {
+    background: rgba(255,255,255,.05);
+    border: 0;
+    border-radius: 0px 0px 10px 10px;
+}
+
+@media screen and (max-width: 991px) {
+    #perguntas-frequentes {
+        width: 100%;
+    }
+    
+    #perguntas-frequentes .titulo {
+        text-align: left;
+    }
+
+    #perguntas-frequentes .nav .nav-link {
+    justify-content: flex-start;
+    flex-direction: column !important;  
+    }
+
+    #perguntas-frequentes .nav .nav-link h3 {
+        font-size: .8rem;
+        font-weight: 600;
+    }
+
+
+}
+
+
+.intl-tel-input {
+  display: table-cell;
+}
+.intl-tel-input .selected-flag {
+  z-index: 4;
+}
+.intl-tel-input .country-list {
+  z-index: 5;
+}
+.input-group .intl-tel-input .form-control {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0;
